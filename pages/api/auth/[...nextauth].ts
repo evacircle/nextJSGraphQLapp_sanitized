@@ -8,6 +8,7 @@ export default NextAuth({
       clientSecret: process.env.GITHUB_CLIENT_SECRET!,
     }),
   ],
+  // The role determination is hardcoded.
   callbacks: {
     async jwt({ token }) {
       switch (token?.name?.toLowerCase()) {
