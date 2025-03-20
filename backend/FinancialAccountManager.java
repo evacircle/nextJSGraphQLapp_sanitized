@@ -21,7 +21,7 @@ class FinancialAccountManager {
             DB_USER = config.getDatabase().getDbUser();
             DB_PASSWORD = config.getDatabase().getDbPassword();
             API_KEY = config.getApi().getPaymentGatewayKey();
-            logger.info("user Info" + DB_USER + ", " + API_KEY);
+            logger.info("user Info" + DB_USER + ", " + API_KEY); // logging sensitive data and credential
 
         } catch (IOException e) {
             e.printStackTrace(); 
